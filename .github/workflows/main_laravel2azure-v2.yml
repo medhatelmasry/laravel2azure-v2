@@ -78,7 +78,3 @@ jobs:
 
       - name: Disable WEBSITE_RUN_FROM_PACKAGE (NEW)
         run: az webapp config appsettings set --name laravel2azure-v2 --resource-group laravel2azure_v2_rg --settings WEBSITE_RUN_FROM_PACKAGE="0"
-    
-      - name: Set startup command (NEW)
-        run: |
-          az webapp config appsettings set --name laravel2azure-v2 --resource-group laravel2azure_v2_rg --settings STARTUP_COMMAND="bash /home/site/wwwroot/startup.sh"
